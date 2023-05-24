@@ -71,14 +71,11 @@
             margin: 0 -10px;
         }
         .carousel {
-            /* position: fixed; */
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: auto; 
-            overflow: hidden; /* Hide any extra content */
             padding: 1em 0;
-            background-color: rgba(0,0,0,0.7);
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+            margin-left: -10px;
+            margin-right: -10px;
         }
         /* The Modal (background) */
         .modal {
@@ -132,13 +129,46 @@
             cursor: pointer;
         }
 
+        #sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            background-color: #000000;
+            padding: 1em;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        #sidebar ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        #sidebar li {
+            list-style: none;
+        }
+
+        #sidebar a {
+            display: block;
+            color: #4a3b3b;
+            margin-bottom: 1em;
+            text-decoration: none;
+        }
+
+        #sidebar a:hover {
+            color: #d6cdcd;
+        }
+
+
         
 
     </style>
 </head>
 
 <body>
-    <!-- Social Media Links -->
+    <!-- Social Media Links
     <div class="social-media">
         <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
@@ -146,11 +176,34 @@
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
         <a href="mailto:harald.bryn@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
         <a href="tel:+4792458651"><i class="fa fa-phone" aria-hidden="true"></i> Phone</a>
-        <a href="https://github.com/yourusername"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+        <a href="https://github.com/brynagut"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
     </div>
-
+         -->
     
     <div class="social-media" id="sidebar">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+            </li>
+            <li class="list-group-item">
+                <a href="mailto:harald.bryn@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+            </li>
+            <li class="list-group-item">
+                <a href="tel:+4792458651"><i class="fa fa-phone" aria-hidden="true"></i> Phone</a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://github.com/yourusername"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+            </li>
+        </ul>
     </div>
 
     <div class="content">
@@ -211,8 +264,9 @@
                 <source src="media/Harald_vid.mp4" type="video/mp4">
             </video>
         </div>
-        <!-- More items here -->
-    </div> -->
+
+    </div> 
+        -->
 
     <!-- Image/Video Modal -->
     <div id="mediaModal" class="modal">
@@ -263,7 +317,7 @@
             modal.style.display = "none";
             modalVid.pause(); // Pause the video
             }
-            
+        /*
             window.onload = function() {
             var sidebar = document.getElementById("sidebar");
             sidebar.style.opacity = 0;
@@ -279,7 +333,8 @@
             } else {
                 sidebar.style.opacity = opacity;
             }
-        }
+            } 
+            */
 
         });
     </script>
