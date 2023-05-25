@@ -134,7 +134,7 @@
             top: 0;
             bottom: 0;
             left: 0;
-            width: 200px;
+            width: 170px;
             background-color: #000000;
             padding: 1em;
             box-sizing: border-box;
@@ -160,6 +160,36 @@
         #sidebar a:hover {
             color: #d6cdcd;
         }
+        
+        .skill-bar {
+            background-color: #111; /* Background color for the skills bar */
+            padding: 10px;
+        }
+
+            .skill-html,
+            .skill-css {
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+            .skill-name {
+            display: inline-block;
+            width: 60px;
+            color: #fff; /* Text color for skill name */
+            margin-right: 10px;
+        }
+
+            .skill-html {
+            background-color: #6a1b9a; /* Color for HTML skill bar */
+            width: 80%; /* Adjust the width based on skill level */
+        }
+
+            .skill-css {
+            background-color: #039be5; /* Color for CSS skill bar */
+            width: 70%; /* Adjust the width based on skill level */
+        }
+
+            /* Add more CSS classes for additional skills */
 
 
         
@@ -213,36 +243,70 @@
             <h2>Cybernetics engineer</h2>
         </div>
 
+        <div class="skill-bar">
+            <div class="skill-html">
+              <span class="skill-name">HTML</span>
+            </div>
+            <div class="skill-css">
+              <span class="skill-name">CSS</span>
+            </div>
+            <!-- Add more skills here -->
+          </div>
+          
+
         <!-- Resume Information -->
         <div class="resume-info mt-5">
-            <p>ollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-            </p>
+            <h2>Work Experience</h2>
+            <h3>Electrical and Automation Engineer Trainee, Evoy</h3>
+            <p>Duration: 1 Year</p>
+            <ul>
+                <li>Participated in the creation of electrical drawings using E3.</li>
+                <li>Performed service, system setup, and creation of test benches.</li>
+                <li>Conducted service trips for system installation, troubleshooting, and customer interactions.</li>
+            </ul>
+
+            <h3>Key Achievements</h3>
+            <ul>
+                <li>Measured different systems and outputs running on canbus, utilizing software and DBC files for real-time data reading and plotting.</li>
+                <li>Programmed the main system according to customer requirements.</li>
+                <li>Developed software for automating various internal processes.</li>
+                <li>Engaged in learning about the new system running on micro service architecture.</li>
+            </ul>
+
+            <h3>Current Learning</h3>
+            <ul>
+                <li>Preparing to write automation code for the new system running on micro service architecture.</li>
+            </ul>
             
 
                  <!-- Carousel Slider -->
-    <div class="carousel mt-5">
-        <div>
-            <img src="media/framside.jpeg" class="d-block w-100" alt="Image 1">
+        <div class="carousel mt-5">
+            <div>
+                <img src="media/framside.jpeg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div>
+                <img src="media/meg.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div>
+                <img src="media/trainee.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div>
+                <video controls>
+                    <source src="media/Harald_vid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <img src="media/OnTheMarket.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div>
+                <img src="media/baat.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div>
+                <img src="media/ser.jpg" class="d-block w-100" alt="Image 2">
+            </div>
         </div>
-        <div>
-            <img src="media/meg.jpg" class="d-block w-100" alt="Image 2">
-        </div>
-        <div>
-            <img src="media/trainee.jpg" class="d-block w-100" alt="Image 3">
-        </div>
-        <div>
-            <video controls>
-                <source src="media/Harald_vid.mp4" type="video/mp4">
-            </video>
-        </div>
-        <!-- More items here -->
-    </div>
         
         </div>
-        
-   
-        
-
             
 
     </div>
