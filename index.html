@@ -150,12 +150,31 @@
             list-style: none;
         }
 
-        #sidebar a {
+       /* #sidebar a {
             display: block;
             color: #4a3b3b;
             margin-bottom: 1em;
             text-decoration: none;
+        } */
+        #sidebar a {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            color: #4a3b3b;
+            margin-bottom: 1em;
+            text-decoration: none;
         }
+
+        #sidebar a i {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            #sidebar a span {
+                display: none;
+            }
+        }
+
 
         #sidebar a:hover {
             color: #d6cdcd;
