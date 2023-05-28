@@ -10,7 +10,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- FontAwesome for social icons -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
@@ -28,6 +31,7 @@
             padding: 2em;
             padding-left: 210px;  /* width of sidebar + padding */
         }
+        /*
         .carousel img,
         .carousel video {
             width: 100%; 
@@ -35,6 +39,16 @@
             box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5);
             cursor: pointer;
             object-fit: cover; /* Maintain aspect ratio and cover entire content box */
+      /*  } */
+        .carousel img,
+        .carousel video {
+            width: 100%; 
+            max-height: auto; 
+            max-width: 90%;
+            box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3); /* Lowered blur and spread, lighter shadow color */
+            cursor: pointer;
+            object-fit: cover; /* Maintain aspect ratio and cover entire content box */
+            margin: auto; /* Added to center the image/video within its container.*/
         }
 
         .carousel img.expanded,
@@ -73,6 +87,8 @@
         .slick-list {
             margin: 0 -10px;
         }
+
+        
         .carousel {
             padding: 1em 0;
             background-color: rgba(0, 0, 0, 0.7);
@@ -80,6 +96,9 @@
             margin-left: -10px;
             margin-right: -10px;
         }
+
+
+
         /* The Modal (background) */
         .modal {
             display: none; /* Hidden by default */
@@ -188,29 +207,59 @@
             padding: 10px;
         }
 
-            .skill-html,
-            .skill-css {
+            .skill-Creativity,
+            .skill-Adaptability,
+            .skill-Problem-solving,
+            .skill-Teamwork,
+            .skill-Project-management,
+            .skill-Software-development {
             height: 20px;
             margin-bottom: 10px;
         }
-
+/*
             .skill-name {
             display: inline-block;
             width: 60px;
+            color: #fff; */ /* Text color for skill name */
+    /*        margin-right: 20px; 
+            } */
+        
+
+            .skill-name {
+            width: auto;
             color: #fff; /* Text color for skill name */
-            margin-right: 10px;
+            margin-right: 20px;
         }
 
-            .skill-html {
+            .skill-Problem-solving {
             background-color: #6a1b9a; /* Color for HTML skill bar */
             width: 80%; /* Adjust the width based on skill level */
         }
 
-            .skill-css {
+            .skill-Teamwork {
             background-color: #039be5; /* Color for CSS skill bar */
             width: 70%; /* Adjust the width based on skill level */
         }
 
+            .skill-Software-development {
+            background-color: #122229; /* Color for CSS skill bar */
+            width: 80%; /* Adjust the width based on skill level */
+        }
+
+            .skill-Project-management {
+            background-color: #500827; /* Color for CSS skill bar */
+            width: 60%; /* Adjust the width based on skill level */
+        }
+
+            .skill-Adaptability {
+            background-color: #154506; /* Color for CSS skill bar */
+            width: 90%; /* Adjust the width based on skill level */
+        }
+
+            .skill-Creativity {
+            background-color: #30140e; /* Color for CSS skill bar */
+            width: 80%; /* Adjust the width based on skill level */
+        }
             /* Add more CSS classes for additional skills */
 
 
@@ -223,26 +272,26 @@
     <div class="social-media" id="sidebar">
         <ul class="list-group">
             <li class="list-group-item">
-                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+                <a href="https://www.facebook.com/harald.rekvebryn"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
             </li>
             <li class="list-group-item">
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                <a href="https://www.linkedin.com/in/harald-bryn-7a72a6206"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
             </li>
             <li class="list-group-item">
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                <a href="mailto:harald.bryn@hotmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
             </li>
             <li class="list-group-item">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                <a href="tel:+4792458651"><i class="fas fa-phone" aria-hidden="true"></i> Phone</a>
             </li>
             <li class="list-group-item">
-                <a href="mailto:harald.bryn@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+                <a href="https://github.com/brynagut"><i class="fab fa-github" aria-hidden="true"></i> Github</a>
             </li>
             <li class="list-group-item">
-                <a href="tel:+4792458651"><i class="fa fa-phone" aria-hidden="true"></i> Phone</a>
+                <a href="media/CV_Harald_B_-2.pdf" download><i class="fas fa-file-pdf" aria-hidden="true"></i> CV</a>
             </li>
             <li class="list-group-item">
-                <a href="https://github.com/brynagut"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-            </li>
+                <a href="https://www.framtidsfylket.no/artikler/harald" download><i class="fas fa-newspaper" aria-hidden="true"></i> Article</a>
+            </li>                      
         </ul>
     </div>
 
@@ -258,13 +307,24 @@
         <br>
         <div class="centered-text"><h2>Skills</h2></div>
         <div class="skill-bar">
-            <div class="skill-html">
-              <span class="skill-name">HTML</span>
+            <div class="skill-Problem-solving">
+              <span class="skill-name">Problem solving</span>
             </div>
-            <div class="skill-css">
-              <span class="skill-name">CSS</span>
+            <div class="skill-Project-management">
+              <span class="skill-name">Prosject management</span>
             </div>
-            <!-- Add more skills here -->
+            <div class="skill-Software-development">
+                <span class="skill-name">Software development</span>
+            </div>
+            <div class="skill-Teamwork">
+            <span class="skill-name">Teamwork</span>
+            </div>
+            <div class="skill-Adaptability">
+                <span class="skill-name">Adaptability</span>
+            </div>
+            <div class="skill-Creativity">
+                <span class="skill-name">Creativity</span>
+              </div>
           </div>
           
 
@@ -335,7 +395,7 @@
                 <h4>Automation and Robotics Engineer, Western University of Applied Science</h3>
                 <p>Bergen, Norway</p>
                 <h4>Main subjects:</h4>
-                <p>The Automation Studies primarily provide an introduction to fundamental engineering disciplines with a special emphasis on electrical engineering, instrumentation, process engineering, and computer science. The specialization courses and some elective courses reflect the focal areas of the specialization, covering key subjects such </p>as:
+                <p>The Automation Studies primarily provide an introduction to fundamental engineering disciplines with a special emphasis on electrical engineering, instrumentation, process engineering, and computer science. The specialization courses and some elective courses reflect the focal areas of the specialization, covering key subjects such as:</p>
                 <ul>
                     <li>Regulation engineering</li>
                     <li>Instrumentation and measurement techniques</li>
@@ -437,45 +497,27 @@
                 <h3>Summer and side jobs</h3>
                 <p>Throughout the years I've had a number of jobs as listed below:</p>
                 <ul>
-                    <li>Working for a farm as a weeder at 12 Years</li>
-                    <li>strawberry-picker at 13 years</li>
-                    <li>Worked at a grocery-store at 18 years till 19 years</li>
-                    <li>At 19 after school I went to the military </li>
-                </ul>
-
-                <h2>Travel</h2>
-                <p>Traveling is a passion of mine, and I enjoy exploring new places and experiencing different cultures. Some of my recent travel destinations include:</p>
-                <ul>
-                    <li>Paris, France</li>
-                    <li>Tokyo, Japan</li>
-                    <li>Machu Picchu, Peru</li>
+                    <li>Working for a farm as a weeder</li>
+                    <li>Worked as a strawberry-picker at a farm</li>
+                    <li>Worked at a grocery-store</li>
+                    <li>Went to the military afte</li>
                 </ul>
                 
 
                 <!-- Carousel Slider -->
             <div class="carousel mt-5">
                 <div>
-                    <img src="media/Aut_thesis/ROBOT.jpg" class="d-block w-100" alt="Image 1">
+                    <img src="media/Personal/kamera.jpg" class="d-block w-100" alt="Image 1">
+                </div>
+
+                <div>
+                    <img src="media/Personal/dancing.jpg" class="d-block w-100" alt="Image 2">
                 </div>
                 <div>
-                    <img src="media/Aut_thesis/Robot_bush_detection.jpg" class="d-block w-100" alt="Image 2">
+                    <img src="media/Personal/Climbing.jpg" class="d-block w-100" alt="Image 3">
                 </div>
                 <div>
-                    <img src="media/Aut_thesis/Oversight.jpg" class="d-block w-100" alt="Image 3">
-                </div>
-                <div>
-                    <video controls>
-                        <source src="media/Aut_thesis/Robot_video.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div>
-                    <img src="media/Aut_thesis/ECO_system.jpg" class="d-block w-100" alt="Image 4">
-                </div>
-                <div>
-                    <img src="media/Aut_thesis/Rviz_sim_D415.png" class="d-block w-100" alt="Image 5">
-                </div>
-                <div>
-                    <img src="media/Aut_thesis/tf_to_cloud.png" class="d-block w-100" alt="Image 6">
+                    <img src="media/Aut_thesis/tf_to_cloud.png" class="d-block w-100" alt="Image 4">
                 </div> 
             </div>
         </div>
@@ -489,8 +531,6 @@
         <div id="caption"></div>
     </div>
   
-  
-
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Slick Slider -->
