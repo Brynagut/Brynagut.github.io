@@ -31,15 +31,15 @@
             padding: 2em;
             padding-left: 210px;  /* width of sidebar + padding */
         }
-        /*
-        .carousel img,
-        .carousel video {
-            width: 100%; 
-            max-height: auto; 
-            box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5);
-            cursor: pointer;
-            object-fit: cover; /* Maintain aspect ratio and cover entire content box */
-      /*  } */
+
+        #profile-picture {
+            width: 200px; /* adjust this as needed */
+            height: 200px; /* adjust this as needed */
+            border-radius: 50%; /* this makes the image circular */
+            margin-right: 20px; /* space between the image and the name */
+            display: inline-block; /* this makes the image and the text align on the same line */
+        }
+       
         .carousel img,
         .carousel video {
             width: 100%; 
@@ -172,12 +172,6 @@
             list-style: none;
         }
 
-       /* #sidebar a {
-            display: block;
-            color: #4a3b3b;
-            margin-bottom: 1em;
-            text-decoration: none;
-        } */
         #sidebar a {
             display: flex;
             justify-content: start;
@@ -191,12 +185,15 @@
             margin-right: 10px;
         }
 
+       
         @media (max-width: 1000px) {
-            #sidebar a span {
-                display: none;
-            }
+        #sidebar a span {
+            display: none;
         }
-
+        #sidebar {
+        width: 90px; /* Adjust as needed */
+        }
+    }
 
         #sidebar a:hover {
             color: #d6cdcd;
@@ -216,14 +213,6 @@
             height: 20px;
             margin-bottom: 10px;
         }
-/*
-            .skill-name {
-            display: inline-block;
-            width: 60px;
-            color: #fff; */ /* Text color for skill name */
-    /*        margin-right: 20px; 
-            } */
-        
 
             .skill-name {
             width: auto;
@@ -257,13 +246,22 @@
         }
 
             .skill-Creativity {
-            background-color: #30140e; /* Color for CSS skill bar */
+            background-color: #c30000; /* Color for CSS skill bar */
             width: 80%; /* Adjust the width based on skill level */
         }
             /* Add more CSS classes for additional skills */
 
+            .bullet-points {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                padding: 0;
+            }
 
-        
+            .bullet-points li {
+                margin-right: 10px;
+            }
+
 
     </style>
 </head>
@@ -272,37 +270,41 @@
     <div class="social-media" id="sidebar">
         <ul class="list-group">
             <li class="list-group-item">
-                <a href="https://www.facebook.com/harald.rekvebryn"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+                <a href="https://www.facebook.com/harald.rekvebryn"><i class="fab fa-facebook" aria-hidden="true"></i> <span>Facebook</span></a>
             </li>
             <li class="list-group-item">
-                <a href="https://www.linkedin.com/in/harald-bryn-7a72a6206"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                <a href="https://www.linkedin.com/in/harald-bryn-7a72a6206"><i class="fab fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span> </a>
             </li>
             <li class="list-group-item">
-                <a href="mailto:harald.bryn@hotmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+                <a href="mailto:harald.bryn@hotmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> <span>Email</span></a>
             </li>
             <li class="list-group-item">
-                <a href="tel:+4792458651"><i class="fas fa-phone" aria-hidden="true"></i> Phone</a>
+                <a href="tel:+4792458651"><i class="fas fa-phone" aria-hidden="true"></i> <span>Phone</span></a>
             </li>
             <li class="list-group-item">
-                <a href="https://github.com/brynagut"><i class="fab fa-github" aria-hidden="true"></i> Github</a>
+                <a href="https://github.com/brynagut"><i class="fab fa-github" aria-hidden="true"></i> <span>Github</span></a>
             </li>
             <li class="list-group-item">
-                <a href="media/CV_Harald_B_-2.pdf" download><i class="fas fa-file-pdf" aria-hidden="true"></i> CV</a>
+                <a href="media/CV_Harald_B_-2.pdf" download><i class="fas fa-file-pdf" aria-hidden="true"></i> <span>CV</span></a>
             </li>
             <li class="list-group-item">
-                <a href="https://www.framtidsfylket.no/artikler/harald" download><i class="fas fa-newspaper" aria-hidden="true"></i> Article</a>
+                <a href="https://www.framtidsfylket.no/artikler/harald" download><i class="fas fa-newspaper" aria-hidden="true"></i> <span>Article</span></a>
             </li>                      
         </ul>
     </div>
 
+    
     <div class="content">
-        <!-- Resume Headline -->
         <div class="centered-text">
             <div class="headline">
+                <img id="profile-picture" src="meg.jpg" alt="Profile Picture">
                 <h1>Harald Bryn</h1>
                 <h2>Cybernetics engineer</h2>
             </div>
         </div>
+        
+
+
         <br>
         <br>
         <div class="centered-text"><h2>Skills</h2></div>
@@ -327,10 +329,26 @@
               </div>
           </div>
           
+          <div class="resume-info mt-5">
+            <div class="centered-text">
+                <h2><b>Experience with</b></h2>
+            </div>
+
+                <ul class="bullet-points">
+                    <li>Languages:</li><li>HTML,</li><li>CSS,</li><li>Java,</li><li>C#,</li><li>C++,</li><li>Python,</li><li>SQL</li><li></li><li>PLC,</li><li>HMI,</li><li>Python,</li><li>SQL,</li><li>Arduino</li>
+                </ul>
+                <ul class="bullet-points">
+                    <li>Platforms/Programs:</li><li>PostgeSQL,</li><li>TIA Portal,</li><li>.NET</li><li>E3,</li><li>,</li><li>Python,</li><li>SQL,</li><li>PostgeSQL,</li><li>PLC,</li><li>HMI,</li><li>Python,</li><li>SQL,</li><li>HMI</li>
+                </ul>
+            </div>
+        
+
+
+
 
         <!-- Resume Information -->
         <div class="resume-info mt-5">
-            <div class="centered-text"><h2><b>Work Experience</b></h2></div>
+            <div class="centered-text"><h1><b>Work Experience</b></h1></div>
             <br>
             <h4>Cybernetics Engineer Trainee, Evoy</h4>
             <p>Experience duration: 1 Year</p>
@@ -364,9 +382,6 @@
                 <img src="media/Evoy/framside.jpeg" class="d-block w-100" alt="Image 1">
             </div>
             <div>
-                <img src="media/Evoy/meg.jpg" class="d-block w-100" alt="Image 2">
-            </div>
-            <div>
                 <img src="media/Evoy/trainee.jpg" class="d-block w-100" alt="Image 3">
             </div>
             <div>
@@ -390,7 +405,7 @@
         
         <!-- Resume Information -->
         <div class="resume-info mt-5">
-            <div class="centered-text"><h2>School</h2></div>
+            <div class="centered-text"><h1><b>School</b></h1></div>
             <br>
                 <h4>Automation and Robotics Engineer, Western University of Applied Science</h3>
                 <p>Bergen, Norway</p>
@@ -464,28 +479,42 @@
                     <b>RISC-V Based Microcontroller in FPGA:</b> Investigated RISC-V, why and how it works, and looked into the surrounding topics necessary to evaluate the technology
                 </li>
             </ul>
+
             <!-- Carousel Slider -->
             <div class="carousel mt-5">
                 <div>
                     <img src="media/Elektro_thesis/RiscV_Logo.png" class="d-block w-100" alt="Image 1">
                 </div>
                 <div>
-                    <img src="media/Elektro_thesis/Board-Components.jpg" class="d-block w-100" alt="Image 2">
+                    <img src="media/Elektro_thesis/HAL_sin_plass.jpg" class="d-block w-100" alt="Image 2">
                 </div>
                 <div>
-                    <img src="media/Elektro_thesis/ip-blokker.png" class="d-block w-100" alt="Image 4">
+                    <img src="media/Elektro_thesis/Board-Components.jpg" class="d-block w-100" alt="Image 3">
                 </div>
                 <div>
-                    <img src="media/Elektro_thesis/HAL_sin_plass.jpg" class="d-block w-100" alt="Image 5">
+                    <img src="media/Elektro_thesis/5_stages.jpg" class="d-block w-100" alt="Image 4">
+                </div>
+                <div>
+                    <img src="media/Elektro_thesis/ip-blokker.png" class="d-block w-100" alt="Image 5">
                 </div>
             </div>
         </div>
 
         <!-- Resume Information -->
         <div class="resume-info mt-5">
-            <div class="centered-text"><h2><b>About me</b></h2></div>
+            <div class="centered-text"><h1><b>About me</b></h1></div>
 
-                <h3>Hobbies</h3>
+            <p>Hello! My full name is Harald Rekve Bryn and I was born 11. august 1997 in Voss norway. I am a creative and enthusiastic individual with a passion for figuring out how things work. 
+                I have a bachelor's degree in Electronics engineering, and another in Automation and robotics engineering. 
+                This is where I honed my skills and developed a broad basis of understanding how electronics and computers work.
+                I thrive in dynamic and hectic environments, where I can contribute by being level headed and resilient. 
+                With my strong interpersonal skills, I excel at building positive relationships with colleagues and clients alike. I am a proactive problem solver and always strive to deliver high-quality work within deadlines.
+                In addition to my technical knowledge from school and work experience, I also possess a love for understanding new technologies and trends on my personal time. 
+                I have chosen this path because I strongly believe in the ability of computers to automate tasks, especially those that affect our health, thus improving our well-being.   
+                Outside of my field, I love spending time with friends, but also spending time by myself. I also believe that staying active is a requirement for maintaining good health.
+                <br>Overall, I am a dedicated and passionate professional who is committed to continuous growth and improvement. I am eager to contribute my skills and creativity to a team that values innovation and automated processes. </p>
+
+                <h3>Current hobbies</h3>
                 <ul>
                     <li>Climbing</li>
                     <li>Lifting weights</li>
@@ -494,8 +523,7 @@
                     <li>Dancing</li>
                 </ul>
 
-                <h3>Jobs</h3>
-                <p>Throughout the years I've had a number of jobs as listed below:</p>
+                <h3>Jobs throughout the years</h3>
                 <ul>
                     <li>Working for a farm as a weeder</li>
                     <li>Worked as a strawberry-picker at a farm</li>
@@ -571,24 +599,6 @@
             modal.style.display = "none";
             modalVid.pause(); // Pause the video
             }
-        /*
-            window.onload = function() {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.style.opacity = 0;
-            }
-
-            window.onscroll = function() {
-            var scrollHeight = document.documentElement.scrollTop;
-            var sidebar = document.getElementById("sidebar");
-            var opacity = scrollHeight / 500;
-
-            if (opacity > 1) {
-                sidebar.style.opacity = 1;
-            } else {
-                sidebar.style.opacity = opacity;
-            }
-            } 
-            */
 
         });
     </script>
